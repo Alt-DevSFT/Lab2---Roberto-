@@ -50,7 +50,8 @@ List * createList() {
 
 void * firstList(List * list) {
 
-    Node *cabeza = list->head;
+    Node *Dato = malloc(sizeof(List))
+    Dato = list->head;
     
     return cabeza;
 }

@@ -138,3 +138,24 @@ Fri Mar 27 01:42:29 AM UTC 2026:
  tests:  1|5
 total_score: 10/60
 5d80a08
+Fri Mar 27 01:48:58 AM UTC 2026: 
+ list.c | 3 ++-
+ 1 file changed, 2 insertions(+), 1 deletion(-)
+Compilation failed
+In file included from test.c:5:
+list.c: In function ‘firstList’:
+list.c:54:5: error: expected ‘,’ or ‘;’ before ‘Dato’
+   54 |     Dato = list->head;
+      |     ^~~~
+list.c:56:12: error: ‘cabeza’ undeclared (first use in this function)
+   56 |     return cabeza;
+      |            ^~~~~~
+list.c:56:12: note: each undeclared identifier is reported only once for each function it appears in
+list.c:53:11: error: unused variable ‘Dato’ [-Werror=unused-variable]
+   53 |     Node *Dato = malloc(sizeof(List))
+      |           ^~~~
+list.c:57:1: error: control reaches end of non-void function [-Werror=return-type]
+   57 | }
+      | ^
+cc1: all warnings being treated as errors
+ee6e37d
