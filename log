@@ -197,3 +197,14 @@ list.c:78:6: error: ‘pushBack’ defined but not used [-Werror=unused-function
       |      ^~~~~~~~
 cc1: all warnings being treated as errors
 af21386
+Fri Mar 27 01:52:22 AM UTC 2026: 
+ list.c | 1 +
+ 1 file changed, 1 insertion(+)
+Compilation failed
+In file included from test.c:5:
+list.c: In function ‘firstList’:
+list.c:55:1: error: control reaches end of non-void function [-Werror=return-type]
+   55 | }
+      | ^
+cc1: all warnings being treated as errors
+fe4438d
