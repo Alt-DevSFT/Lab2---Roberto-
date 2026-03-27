@@ -115,7 +115,6 @@ void pushFront(List * list, void * data)
     if(list->head) list->head->prev = espacio;
 
     list->head = espacio;
-    list->tail ++;
 }
 
 void pushBack(List * list, void * data) {
