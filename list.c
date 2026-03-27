@@ -111,9 +111,10 @@ void pushFront(List * list, void * data)
     Node *espacio = malloc(sizeof(Node));
     
     espacio->data = data;
+    espacio->prev = NULL;
     espacio->next = list->head;
     
-    if(list->head) list->head->prev;
+    if(list->head) list->head->prev = espacio;
     list->head = espacio;
 }
 
