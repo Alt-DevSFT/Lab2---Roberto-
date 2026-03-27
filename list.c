@@ -106,8 +106,6 @@ void * prevList(List * list) {
 
 void pushFront(List * list, void * data) 
 {
-    if(list->head == NULL) return NULL;
-
     Node *espacio = malloc(sizeof(Node));
     
     espacio->data = data;
