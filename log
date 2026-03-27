@@ -112,3 +112,13 @@ list.c:55:12: error: returning ‘int’ from a function with return type ‘voi
    55 |     return cabeza;
       |            ^~~~~~
 c3e6439
+Fri Mar 27 01:40:22 AM UTC 2026: 
+ list.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+Compilation failed
+In file included from test.c:5:
+list.c: In function ‘firstList’:
+list.c:53:20: error: initialization of ‘List *’ {aka ‘struct List *’} from incompatible pointer type ‘Node *’ [-Wincompatible-pointer-types]
+   53 |     List *cabeza = list->head;
+      |                    ^~~~
+2fe39c1
