@@ -106,7 +106,7 @@ void * prevList(List * list) {
 
 void pushFront(List * list, void * data) 
 {
-    Node *espacio = malloc(sizeof(Node));
+    Node *espacio = createNode(data);
     
     espacio->data = data;
     espacio->prev = NULL;
