@@ -109,14 +109,12 @@ void pushFront(List * list, void * data)
     if(list->head == NULL) return NULL;
 
     Node *espacio = malloc(sizeof(Node))
+    
     espacio->data = data;
     espacio->next = list->head;
+    
     if(list->head) list->head->prev;
     list->head = espacio;
-
-    List* list = malloc(sizeof(List));
-    list->head = data; 
-    
 }
 
 void pushBack(List * list, void * data) {
