@@ -97,7 +97,7 @@ void * prevList(List * list) {
 
     if(list->current != NULL)
     {
-        return list->current->prev = list->current;
+        return list->current = list->current->prev;
     }
     
     return NULL;
