@@ -417,3 +417,14 @@ Fri Mar 27 07:58:18 PM UTC 2026:
  1 file changed, 2 insertions(+), 2 deletions(-)
  tests:  0|0
 0784d77
+Fri Mar 27 08:07:13 PM UTC 2026: 
+ list.c | 6 ++----
+ 1 file changed, 2 insertions(+), 4 deletions(-)
+Compilation failed
+In file included from test.c:5:
+list.c: In function ‘prevList’:
+list.c:94:48: error: ‘Node’ has no member named ‘priv’; did you mean ‘prev’?
+   94 |     if(list->current == NULL || list->current->priv == NULL) return NULL;
+      |                                                ^~~~
+      |                                                prev
+ea79168
