@@ -132,3 +132,9 @@ list.c:53:20: error: expected expression before ‘List’
    53 |     List *cabeza = List->head;
       |                    ^~~~
 fc3021b
+Fri Mar 27 01:42:29 AM UTC 2026: 
+ list.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+ tests:  1|5
+total_score: 10/60
+5d80a08

@@ -50,7 +50,7 @@ List * createList() {
 
 void * firstList(List * list) {
 
-    List *cabeza = List->head;
+    Node *cabeza = list->head;
     
     return cabeza;
 }
