@@ -434,3 +434,29 @@ Fri Mar 27 08:07:27 PM UTC 2026:
  tests:  9|3
 total_score: 30/60
 82eb490
+Fri Mar 27 09:26:33 PM UTC 2026: 
+ list.c | 14 +++++++++++++-
+ 1 file changed, 13 insertions(+), 1 deletion(-)
+Compilation failed
+In file included from test.c:5:
+list.c: In function ‘pushFront’:
+list.c:109:35: error: ‘return’ with a value, in function returning void [-Wreturn-mismatch]
+  109 |     if(list->head == NULL) return NULL;
+      |                                   ^~~~
+list.c:107:6: note: declared here
+  107 | void pushFront(List * list, void * data)
+      |      ^~~~~~~~~
+list.c:112:5: error: expected ‘,’ or ‘;’ before ‘espacio’
+  112 |     espacio->data = data;
+      |     ^~~~~~~
+list.c:114:30: error: statement with no effect [-Werror=unused-value]
+  114 |     if(list->head) list->head->prev;
+      |                    ~~~~~~~~~~^~~~~~
+list.c:117:11: error: ‘list’ redeclared as different kind of symbol
+  117 |     List* list = malloc(sizeof(List));
+      |           ^~~~
+list.c:107:23: note: previous definition of ‘list’ with type ‘List *’ {aka ‘struct List *’}
+  107 | void pushFront(List * list, void * data)
+      |                ~~~~~~~^~~~
+cc1: all warnings being treated as errors
+69252cd
