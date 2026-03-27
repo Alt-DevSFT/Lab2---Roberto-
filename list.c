@@ -53,7 +53,7 @@ void * firstList(List * list) {
     Node *Dato = malloc(sizeof(List))
     Dato = list->head;
     
-    return cabeza;
+    return Dato;
 }
 
 void * nextList(List * list) {
