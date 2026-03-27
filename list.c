@@ -67,8 +67,6 @@ void * nextList(List * list) {
 
     if(list->current != NULL) return list->current->data;
     
-    
-
 }
 
 // 3. Programe las funciones void * lastList(List * list) y void * prevList(List * list).
@@ -77,8 +75,6 @@ void * nextList(List * list) {
 
 void * lastList(List * list) {
 
-    while(list->current != NULL)
-        {}
     return NULL;
 }
 
