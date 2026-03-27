@@ -50,11 +50,8 @@ List * createList() {
 
 void * firstList(List * list) {
 
-    Node *Dato = malloc(sizeof(List))
-    Dato = list->head;
-    
-    return Dato;
-}
+    list->current = list->head;
+    if(list->current) return list->current->data;
 
 void * nextList(List * list) {
     return NULL;
