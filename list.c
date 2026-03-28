@@ -159,7 +159,7 @@ void * popCurrent(List * list) {
 
     if(list->head == NULL) return NULL;
 
-    Nodo *nodo = createNode(data);
+    Nodo *nodo = createNode();
 
     nodo->next = list->current->next;
     nodo->prev = list->current;
