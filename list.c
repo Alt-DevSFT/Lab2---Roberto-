@@ -160,15 +160,14 @@ void * popCurrent(List * list) {
     Node *temp = list->current;
     void *data = temp->data;
 
-    if(list->current->prev != NULL)
-    {
-        temp->prev->next = temp->next;
-    }
-    else list->head = temp->next;
+    if(temp->prev != NULL) temp->prev->next = temp->next;
+    else list->head = temp->next
 
-    list->current = temp->next;
+    if(temp->next != NULL) temp->next->prev = temp->prev;
+    else list->tail = temp->prev;
 
-    free(temp); 
+    list->current = temp->next
+    free(temp);
 
     return data;
 

@@ -869,3 +869,26 @@ Sat Mar 28 06:21:07 PM UTC 2026:
  tests:  11|1
 total_score: 50/60
 d72dbe4
+Sat Mar 28 07:09:50 PM UTC 2026: 
+ list.c | 11 +++++------
+ 1 file changed, 5 insertions(+), 6 deletions(-)
+Compilation failed
+In file included from test.c:5:
+list.c: In function ‘popCurrent’:
+list.c:164:33: error: expected ‘;’ before ‘if’
+  164 |     else list->head = temp->next
+      |                                 ^
+      |                                 ;
+  165 | 
+  166 |     if(temp->next != NULL) temp->next->prev = temp->prev;
+      |     ~~                           
+list.c:167:5: error: ‘else’ without a previous ‘if’
+  167 |     else list->tail = temp->prev;
+      |     ^~~~
+list.c:169:31: error: expected ‘;’ before ‘free’
+  169 |     list->current = temp->next
+      |                               ^
+      |                               ;
+  170 |     free(temp);
+      |     ~~~~                       
+b97e121
