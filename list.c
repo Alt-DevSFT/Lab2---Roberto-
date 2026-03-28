@@ -159,7 +159,7 @@ void * popCurrent(List * list) {
 
     if(list->current)
     {
-        Nodo *dato = list->current;
+        Nodo *dato = list->current->data;
         list->current = NULL;
     }
 
