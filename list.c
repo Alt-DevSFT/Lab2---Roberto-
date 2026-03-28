@@ -165,8 +165,6 @@ void * popCurrent(List * list) {
 
     free(list->current);
 
-    return *dato;
-
 }
 
 void cleanList(List * list) {
