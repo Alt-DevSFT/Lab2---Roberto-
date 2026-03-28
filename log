@@ -838,3 +838,14 @@ list.c:168:21: error: ‘aux’ undeclared (first use in this function)
       |                     ^~~
 list.c:168:21: note: each undeclared identifier is reported only once for each function it appears in
 4a89e30
+Sat Mar 28 05:21:13 PM UTC 2026: 
+ list.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+Compilation failed
+In file included from test.c:5:
+list.c: In function ‘popCurrent’:
+list.c:168:21: error: ‘aux’ undeclared (first use in this function)
+  168 |     list->current = aux->next;
+      |                     ^~~
+list.c:168:21: note: each undeclared identifier is reported only once for each function it appears in
+99918a3

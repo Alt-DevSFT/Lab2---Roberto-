@@ -163,7 +163,7 @@ void * popCurrent(List * list) {
 
     void *data = temp->data;
 
-    if(list->current->next != NULL) list->current->next->prev = data;
+    if(list->current->next != NULL) list->current->next->prev = temp->prev;
 
     list->current = aux->next;
 
