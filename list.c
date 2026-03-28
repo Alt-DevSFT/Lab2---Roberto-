@@ -137,6 +137,8 @@ void pushCurrent(List * list, void * data) {
     {
         list->tail = nodo;
     }
+
+    list->current->next = nodo;
     
 }
 
