@@ -892,3 +892,20 @@ list.c:169:31: error: expected ‘;’ before ‘free’
   170 |     free(temp);
       |     ~~~~                       
 b97e121
+Sat Mar 28 07:10:01 PM UTC 2026: 
+ list.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+Compilation failed
+In file included from test.c:5:
+list.c: In function ‘popCurrent’:
+list.c:164:33: error: expected ‘;’ before ‘if’
+  164 |     else list->head = temp->next
+      |                                 ^
+      |                                 ;
+  165 | 
+  166 |     if(temp->next != NULL) temp->next->prev = temp->prev;
+      |     ~~                           
+list.c:167:5: error: ‘else’ without a previous ‘if’
+  167 |     else list->tail = temp->prev;
+      |     ^~~~
+3ea1150
