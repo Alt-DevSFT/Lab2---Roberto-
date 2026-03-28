@@ -695,3 +695,28 @@ list.c:167:1: error: control reaches end of non-void function [-Werror=return-ty
       | ^
 cc1: all warnings being treated as errors
 6092547
+Sat Mar 28 04:33:24 PM UTC 2026: 
+ list.c | 13 ++++++++-----
+ 1 file changed, 8 insertions(+), 5 deletions(-)
+Compilation failed
+In file included from test.c:5:
+list.c: In function ‘popCurrent’:
+list.c:162:9: error: unknown type name ‘Nodo’; did you mean ‘Node’?
+  162 |         Nodo *dato = list->current;
+      |         ^~~~
+      |         Node
+list.c:162:22: error: initialization of ‘int *’ from incompatible pointer type ‘Node *’ [-Wincompatible-pointer-types]
+  162 |         Nodo *dato = list->current;
+      |                      ^~~~
+list.c:162:15: error: unused variable ‘dato’ [-Werror=unused-variable]
+  162 |         Nodo *dato = list->current;
+      |               ^~~~
+list.c:168:12: error: ‘dato’ undeclared (first use in this function)
+  168 |     return dato;
+      |            ^~~~
+list.c:168:12: note: each undeclared identifier is reported only once for each function it appears in
+list.c:170:1: error: control reaches end of non-void function [-Werror=return-type]
+  170 | }
+      | ^
+cc1: all warnings being treated as errors
+d9456b4
