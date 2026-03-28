@@ -159,9 +159,15 @@ void * popCurrent(List * list) {
 
     if(list->head == NULL) return NULL;
 
-    list->current = NULL;
-    
-    return list->current;
+    Nodo *nodo = createNode(data);
+
+    nodo->next = list->current->next;
+    nodo->prev = list->current;
+
+    if(list->current->next != NULL) 
+    {
+        return list->current->next->prev = NULL;
+    }
 }
 
 void cleanList(List * list) {
