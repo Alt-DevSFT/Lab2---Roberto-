@@ -157,17 +157,13 @@ void * popBack(List * list) {
 
 void * popCurrent(List * list) {
 
-    if(list->head == NULL) return NULL;
+    Node *aux = list->current;
 
-    Nodo *nodo = createNode();
+    if(aux->prev != NULL) aux->prev->next = aux->next;
+    else list->head = aux->next;
 
-    nodo->next = list->current->next;
-    nodo->prev = list->current;
-
-    if(list->current->next != NULL) 
-    {
-        return list->current->next->prev = NULL;
-    }
+    if(aux->next) return aux->next->prev = aux->prev;
+    else list->tail = aux->prev;
 }
 
 void cleanList(List * list) {

@@ -664,3 +664,14 @@ list.c:171:1: error: control reaches end of non-void function [-Werror=return-ty
       | ^
 cc1: all warnings being treated as errors
 5e34849
+Sat Mar 28 04:32:36 AM UTC 2026: 
+ list.c | 14 +++++---------
+ 1 file changed, 5 insertions(+), 9 deletions(-)
+Compilation failed
+In file included from test.c:5:
+list.c: In function ‘popCurrent’:
+list.c:167:1: error: control reaches end of non-void function [-Werror=return-type]
+  167 | }
+      | ^
+cc1: all warnings being treated as errors
+c215a2e
