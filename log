@@ -816,3 +816,14 @@ list.c:167:1: error: control reaches end of non-void function [-Werror=return-ty
       | ^
 cc1: all warnings being treated as errors
 09b55c2
+Sat Mar 28 05:15:26 PM UTC 2026: 
+ list.c | 15 ++++++++++-----
+ 1 file changed, 10 insertions(+), 5 deletions(-)
+Compilation failed
+In file included from test.c:5:
+list.c: In function ‘popCurrent’:
+list.c:166:21: error: ‘aux’ undeclared (first use in this function)
+  166 |     list->current = aux->next;
+      |                     ^~~
+list.c:166:21: note: each undeclared identifier is reported only once for each function it appears in
+d0e1e69
